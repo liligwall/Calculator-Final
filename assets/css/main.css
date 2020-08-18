@@ -7,7 +7,7 @@ main, input {
     color: #000000;
 }
 
-#flex-grid {
+#buttons {
     color: #ffffff;
 }
 
@@ -18,13 +18,13 @@ body {
     font-size: 36px;
 }
 
-/* flex-grid */
-#flex-grid {
+/* buttons */
+#buttons {
     display: inline-grid;
     float: left;
 }
 
-.top {
+.key-operator {
     flex: 1;
     width: 100px;
     height: 100px;
@@ -34,7 +34,7 @@ body {
     background-color: #909090;
 }
 
-.top:hover {
+.key-operator:hover {
     background-color: #6B6B6B;
 }
 

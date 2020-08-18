@@ -1,28 +1,16 @@
-const calculator = document.querySelector('.calculator')
-const keys = calculator.querySelector('.flex-grid')
+const calculator = document.querySelector('#calculator')
+const keys = calculator.querySelector('#buttons')
 
-keys.addEventListener(click, e => {
-    if (e.target.matches('.flex-grid')) {
+keys.addEventListener('click', e => {
+    if (e.target.matches('#buttons')) {
         // Do something
     }
 })
 
-const key = e.target.matches('flex-grid')
+const key = e.target
 const action = key.dataset.action
 
-if (
-    !action === '7' ||
-    !action === '8' ||
-    !action === '9' ||
-    !action === '4' ||
-    !action === '5' ||
-    !action === '6' ||
-    !action === '1' ||
-    !action === '2' ||
-    !action === '3' ||
-    !action === '.' ||
-    !action === '-' ||
-) {
+if (!action ) {
     console.log('number key!')
 }
 
@@ -30,7 +18,7 @@ if (
     action === 'add' ||
     action === 'subtract' ||
     action === 'multiply' ||
-    action === 'divide' ||
+    action === 'divide' || 
 ) {
     console.log('operator key!')
     key.classlist.add('is-depressed')
@@ -71,10 +59,11 @@ keys.addEventListener('click', e => {
 
 if (!action) {
     if (displayedNum === '0') {
-        display.textContent = '0'
+        display.textContent = keyContent
     }
 }
 
 if (action === 'decimal') {
+    if (displayedNum === '.') {
     display.textContent = displayedNum + '.'
 }
