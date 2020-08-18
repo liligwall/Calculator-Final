@@ -1,0 +1,60 @@
+/* typography */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+main, input {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 36px;
+}
+
+/* flex-grid */
+#flex-grid {
+    display: inline-grid;
+    float: left;
+}
+
+.top {
+    flex: 1;
+    width: 100px;
+    height: 100px;
+    line-height: 6rem;
+    text-align: center;
+    cursor: pointer; 
+    background-color: #909090;
+}
+
+.top:hover {
+    background-color: #6B6B6B;
+}
+
+.button {
+    flex: 1;
+    background-color: #EC7373;
+    width: 100px;
+    height: 100px;
+    line-height: 6rem;
+    text-align: center;
+    cursor: pointer; 
+}
+
+.button:hover {
+    background-color: #C85151;
+}
+
+#display {
+  width: 100%;
+  line-height: 10rem;
+  text-align: right;
+  padding: 0 1rem; 
+  border: none;
+}
+  
+
+  

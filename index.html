@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculator for ID-280 Final">
+    <meta name="author" content="Lili Wall">
+    <title>Calculator for ID-280 Final</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+   <main>
+        <div id="calculator">
+        <input id="display">
+
+            <div id="flex-grid">
+                <div class="top" data-type="manipulator">AC</div>
+                <div class="button" data-type="number">7</div>
+                <div class="button" data-type="number">4</div>
+                <div class="button" data-type="number">1</div>
+                <div class="button" data-type="number">0</div>
+            </div>
+
+            <div id="flex-grid">
+                <div class="top" data-type="number">-/+</div>
+                <div class="button" data-type="number">8</div>
+                <div class="button" data-type="number">5</div>
+                <div class="button" data-type="number">2</div>
+                <div class="button" data-type="number">.</div>
+            </div>
+
+            <div id="flex-grid">
+                <div class="top" data-type="number">%</div>
+                <div class="button" data-type="number">9</div>
+                <div class="button" data-type="number">6</div>
+                <div class="button" data-type="number">3</div>
+                <div class="button" data-type="evaluator">=</div>
+            </div>
+
+            <div id="flex-grid">
+                <div class="top" data-type="manipulator">
+                    <svg width="45" height="35" viewBox="0 0 45 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41.25 0H13.125C11.8313 0 10.8187 0.65625 10.1437 1.65L0 16.875L10.1437 32.0813C10.8187 33.075 11.8313 33.75 13.125 33.75H41.25C43.3125 33.75 45 32.0625 45 30V3.75C45 1.6875 43.3125 0 41.25 0ZM41.25 30H13.2563L4.5 16.875L13.2375 3.75H41.25V30ZM19.5187 26.25L26.25 19.5187L32.9813 26.25L35.625 23.6063L28.8937 16.875L35.625 10.1437L32.9813 7.5L26.25 14.2313L19.5187 7.5L16.875 10.1437L23.6063 16.875L16.875 23.6063L19.5187 26.25Z" fill="white" />
+                    </svg>
+                </div>
+                <div class="top" data-type="operator">÷</div>
+                <div class="top" data-type="operator">×</div>
+                <div class="top" data-type="operator">-</div>
+                <div class="top" data-type="operator">+</div>
+            </div> 
+                
+    
+       </div>
+    </main>
+
+    <script type="module" src="assets/js/app.js"></script>
+
+</body>
+</html>
