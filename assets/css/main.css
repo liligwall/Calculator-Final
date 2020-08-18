@@ -4,13 +4,17 @@
 main, input {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    color: #000000;
+}
+
+#flex-grid {
     color: #ffffff;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
     font-size: 36px;
 }
 
@@ -49,11 +53,18 @@ body {
 }
 
 #display {
-  width: 100%;
-  line-height: 10rem;
-  text-align: right;
-  padding: 0 1rem; 
+  width: 400px;
+  height:160px;
+  text-align: right; 
   border: none;
+  position: bottom left;
+  color: black;
+  font-size: 48px;
+  font-family: 'Lato', sans-serif;
+}
+
+input {
+    display: block;
 }
   
 
